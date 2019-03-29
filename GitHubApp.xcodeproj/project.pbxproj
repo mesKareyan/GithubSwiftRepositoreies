@@ -15,6 +15,9 @@
 		1112CCFA224E0BE900DD53BD /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 1112CCF8224E0BE900DD53BD /* LaunchScreen.storyboard */; };
 		1112CCFD224E0BE900DD53BD /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1112CCFC224E0BE900DD53BD /* main.m */; };
 		1112CD07224E0BE900DD53BD /* GitHubAppTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1112CD06224E0BE900DD53BD /* GitHubAppTests.m */; };
+		1112CD12224E101D00DD53BD /* Readme.md in Resources */ = {isa = PBXBuildFile; fileRef = 1112CD11224E101D00DD53BD /* Readme.md */; };
+		1112CD16224E3A7800DD53BD /* GHAApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1112CD15224E3A7800DD53BD /* GHAApiClient.m */; };
+		1112CD19224E3B5B00DD53BD /* GHAGithubSwiftApiClient.m in Sources */ = {isa = PBXBuildFile; fileRef = 1112CD18224E3B5B00DD53BD /* GHAGithubSwiftApiClient.m */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -42,6 +45,11 @@
 		1112CD02224E0BE900DD53BD /* GitHubAppTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = GitHubAppTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1112CD06224E0BE900DD53BD /* GitHubAppTests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GitHubAppTests.m; sourceTree = "<group>"; };
 		1112CD08224E0BE900DD53BD /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		1112CD11224E101D00DD53BD /* Readme.md */ = {isa = PBXFileReference; lastKnownFileType = net.daringfireball.markdown; path = Readme.md; sourceTree = "<group>"; };
+		1112CD14224E3A7800DD53BD /* GHAApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAApiClient.h; sourceTree = "<group>"; };
+		1112CD15224E3A7800DD53BD /* GHAApiClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAApiClient.m; sourceTree = "<group>"; };
+		1112CD17224E3B5B00DD53BD /* GHAGithubSwiftApiClient.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = GHAGithubSwiftApiClient.h; sourceTree = "<group>"; };
+		1112CD18224E3B5B00DD53BD /* GHAGithubSwiftApiClient.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = GHAGithubSwiftApiClient.m; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -65,6 +73,7 @@
 		1112CCDE224E0BE700DD53BD = {
 			isa = PBXGroup;
 			children = (
+				1112CD11224E101D00DD53BD /* Readme.md */,
 				1112CCE9224E0BE700DD53BD /* GitHubApp */,
 				1112CD05224E0BE900DD53BD /* GitHubAppTests */,
 				1112CCE8224E0BE700DD53BD /* Products */,
@@ -83,6 +92,7 @@
 		1112CCE9224E0BE700DD53BD /* GitHubApp */ = {
 			isa = PBXGroup;
 			children = (
+				1112CD13224E3A6400DD53BD /* API */,
 				1112CCEA224E0BE700DD53BD /* AppDelegate.h */,
 				1112CCEB224E0BE700DD53BD /* AppDelegate.m */,
 				1112CCED224E0BE700DD53BD /* ViewController.h */,
@@ -104,6 +114,17 @@
 				1112CD08224E0BE900DD53BD /* Info.plist */,
 			);
 			path = GitHubAppTests;
+			sourceTree = "<group>";
+		};
+		1112CD13224E3A6400DD53BD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				1112CD14224E3A7800DD53BD /* GHAApiClient.h */,
+				1112CD15224E3A7800DD53BD /* GHAApiClient.m */,
+				1112CD17224E3B5B00DD53BD /* GHAGithubSwiftApiClient.h */,
+				1112CD18224E3B5B00DD53BD /* GHAGithubSwiftApiClient.m */,
+			);
+			path = API;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -186,6 +207,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1112CD12224E101D00DD53BD /* Readme.md in Resources */,
 				1112CCFA224E0BE900DD53BD /* LaunchScreen.storyboard in Resources */,
 				1112CCF7224E0BE900DD53BD /* Assets.xcassets in Resources */,
 				1112CCF2224E0BE700DD53BD /* Main.storyboard in Resources */,
@@ -206,9 +228,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1112CD19224E3B5B00DD53BD /* GHAGithubSwiftApiClient.m in Sources */,
 				1112CCEF224E0BE700DD53BD /* ViewController.m in Sources */,
 				1112CCEC224E0BE700DD53BD /* AppDelegate.m in Sources */,
 				1112CCFD224E0BE900DD53BD /* main.m in Sources */,
+				1112CD16224E3A7800DD53BD /* GHAApiClient.m in Sources */,
 				1112CCF5224E0BE700DD53BD /* GitHubApp.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
